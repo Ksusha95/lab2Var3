@@ -9,11 +9,15 @@ public class Car extends Transport {
 	 * средству ссылку на свежесозданный объект типа прицеп.
 	 */
 	
-	Trailer trailer = null;
+	private Trailer trailer = null;
 
 	public Car(String brand, String model, double maxPermissibleMassTransportedCargo, int numberOfPassenger, int maxSpeed) {
 		
 		super(brand, model, maxPermissibleMassTransportedCargo, numberOfPassenger, maxSpeed);
+	}
+	
+	public void setTrailer(Trailer trailer) {
+		this.trailer = trailer;
 	}
 	
 	@Override
