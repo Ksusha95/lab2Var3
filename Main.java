@@ -55,7 +55,7 @@ public class Main {
 				System.out.print(motorcycle.toString());
 			
 				//Прицепляем прицеп и выводим инфу уже с прицепом
-				motorcycle.trailer = trailer;
+				motorcycle.setTrailer(trailer);
 				System.out.print(motorcycle.toString());
 				break;
 				
@@ -65,7 +65,7 @@ public class Main {
 				System.out.print(car.toString());
 			
 				//Прицепляем прицеп и выводим инфу уже с прицепом
-				car.trailer = trailer;
+				car.setTrailer(trailer);
 				System.out.print(car.toString());
 				break;
 				
@@ -75,7 +75,7 @@ public class Main {
 				System.out.print(truck.toString());
 			
 				//Прицепляем прицеп и выводим инфу уже с прицепом
-				truck.trailer = trailer;
+				truck.setTrailer(trailer);
 				System.out.print(truck.toString());
 				break;
 				
@@ -85,7 +85,7 @@ public class Main {
 				System.out.print(bus.toString());
 			
 				//Прицепляем прицеп и выводим инфу уже с прицепом
-				bus.trailer = trailer;
+				bus.setTrailer(trailer);
 				System.out.print(bus.toString());
 				break;
 				
@@ -100,7 +100,5 @@ public class Main {
 			
 			System.out.println("\nПрервано");
 		}
-
 	}
-
 }
