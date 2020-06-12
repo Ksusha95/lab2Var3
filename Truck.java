@@ -8,13 +8,17 @@ public class Truck extends Transport {
 	 * Если прицепа нет, то его значение будет null. Если он есть, то мы создадим объет типа прицеп и кинем этому транспортному
 	 * средству ссылку на свежесозданный объект типа прицеп.
 	 * 
-	 * Ой, бля, только не спрашивай меня ничего, я сама еле поняла, что написала. */
+	 */
 	
-	Trailer trailer = null;
+	private Trailer trailer = null;
 
 	public Truck(String brand, String model, double maxPermissibleMassTransportedCargo, int numberOfPassenger, int maxSpeed) {
 		
 		super(brand, model, maxPermissibleMassTransportedCargo, numberOfPassenger, maxSpeed);
+	}
+	
+	public void setTrailer(Trailer trailer) {
+		this.trailer = trailer;
 	}
 	
 	@Override
